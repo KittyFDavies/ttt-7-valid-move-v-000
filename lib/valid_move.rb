@@ -1,6 +1,14 @@
 # code your #valid_move? method here
-def valid_move?
-  if position_taken? 
+def valid_move?(index, free)
+  if
+    index_number.between(0, 8)
+      if position_taken?
+        true
+      else
+        false
+      end
+  else
+    false
   end
 end
 
